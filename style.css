@@ -1,0 +1,42 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+.weather-app {
+  background: #ffd4ac;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 10px 5px 6px whitesmoke;
+}
+.search-input {
+  background-color: #dce0ac;
+  border: none;
+  color: rgb(88, 86, 86);
+  font-size: 16px;
+  padding: 20px;
+  width: 75%;
+  border-radius: 6px;
+}
+.search-button {
+  margin-left: 5px;
+  font-size: 16px;
+  background-color: #dce0ac;
+  color: rgb(88, 86, 86);
+  border: none;
+  padding: 20px;
+  line-height: 1;
+  border-radius: 5px;
+}
+.color-number {
+  color: #525711;
+}
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+}
+.forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}

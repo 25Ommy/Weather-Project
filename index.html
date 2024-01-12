@@ -3,61 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Weather App</title>
   </head>
+
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city.." required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        Polokwane <br />
-        Tuesday 14:50,scattered clouds <br />
-        <Humidity:strong>66%</Humidity:strong> Wind: <strong>31,13km/h</strong>
+    <div class="weather-app">
+      <header>
+        <form>
+          <input
+            type="search"
+            class="search-input"
+            id="search-input"
+            placeholder="Enter a city.."
+            required
+          />
+          <input class="search-button" type="submit" value="Search" />
+        </form>
+      </header>
+      <main>
+        <h1>Polokwane</h1>
+        <div class="current-weather">
+          <h2 class="current-details">
+            Tuesday 14:50,scattered clouds <br />
+            Humidity:<strong class="color-number">66%</strong> Wind:
+            <strong class="color-number">31,13km/h</strong>
+          </h2>
 
-        <span>⛅</span>
-        <span>12</span>
-        <span>°C</span>
-      </div>
+          <h3 class="current-temperature">
+            <span class="current-temperature-icon">☀️</span>
+            <span class="current-temperature-value">24</span>
+            <span class="current-temperature-unit">°C</span>
+          </h3>
+        </div>
 
-      <div>
-        <span
-          >Tue <br />
-          ☁️ <br />
-          <strong>19° 20°</strong>
-        </span>
-        <span
-          >Wed <br />
-          ⛅ <br />
-          <strong>20° 14°</strong>
-        </span>
-        <span
-          >Thu <br />
-          ☁️ <br />
-          <strong>19° 15°</strong></span
+        <div class="forecast">
+          <span
+            >Tue <br />
+            ☁️ <br />
+            <strong class="color-number">19° 20°</strong> </span
+          ><br />
+          <span
+            >Wed <br />
+            ⛅ <br />
+            <strong class="color-number">20° 14°</strong>
+          </span>
+          <br />
+          <span
+            >Thu <br />
+            ☁️ <br />
+            <strong class="color-number">19° 15°</strong></span
+          ><br />
+          <span>
+            Fri <br />
+            🌨️ <br />
+            <strong class="color-number">18° 15°</strong></span
+          ><br />
+          <span>
+            Sat <br />
+            🌨️ <br />
+            <strong class="color-number">17° 15°</strong></span
+          >
+        </div>
+      </main>
+      <footer>
+        This was coded by
+        <a href="https://github.com/25Ommy">Ommy Molele</a> and is
+        <a href="https://github.com/25Ommy/Weather-Project"
+          >open sourced on GitHub</a
         >
-        <span>
-          Fri <br />
-          🌨️ <br />
-          <strong>18° 15°</strong></span
-        >
-        <span>
-          Sat <br />
-          🌨️ <br />
-          <strong>17° 15°</strong></span
-        >
-      </div>
-    </main>
-    <footer>
-      This was coded by <a href="https://github.com/25Ommy">Ommy Molele</a> and
-      is
-      <a href="https://github.com/25Ommy/Weather-Project"
-        >open sourced on GitHub</a
-      >
-      and <a href="#">hosted on Netlify.</a>
-    </footer>
+        and <a href="#">hosted on Netlify.</a>
+      </footer>
+    </div>
   </body>
 </html>
